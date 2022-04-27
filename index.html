@@ -5,18 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
     <title>Animated Header</title>
 </head>
 <body>
     <div class="hero">
         <div class="navbar">
             <img src="images/logo.png" alt="logo" class="logo">
-            <button type="button">Sign up</button>
+            <button class="hero-btn sign-up-btn" type="button">Sign up</button>
         </div>
         <div class="content">
             <small>Welcome to our</small>
             <h1>World's <br>Creative Studio</h1>
-            <button type="button">Take a tour</button>
+            <button class="hero-btn" type="button">Take a tour</button>
         </div>
         <div class="side-bar">
             <img src="images/menu.png" class="menu">
@@ -43,5 +46,67 @@
             <img src="images/bubble.png" alt="">
         </div>
     </div>
+    <main>
+        <div class="container">
+            <small>Explore our art</small>
+            <h2>Where <span>art</span> and <br><span>community</span> thrive</h2>
+            <div class="column">
+                <div class="card">
+                    <h3>Lorem</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                    <button class="card-btn">Start exploring</button>
+                </div>
+                <div class="card">
+                    <h3>Ipsum dolor</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                    <button class="card-btn">Become a member</button>
+                </div>
+                <div class="card">
+                    <h3>Sit amet</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                    <button class="card-btn">Get to know us</button>
+                </div>
+            </div>
+        </div>
+        <div class="parallax"></div>
+        <div class="container">
+            <small>Never miss out!</small>
+            <h2>Subscribe to <br>our <span>newsletter</span></h2>
+            <div class="field">
+                <input placeholder="E-mail">
+                <button class="newsletter-btn">Submit</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <svg viewBox="0 0 120 28">
+            <defs> 
+                <mask id="xxx">
+                    <circle cx="7" cy="12" r="40" fill="#fff" />
+                </mask>
+                
+                <filter id="goo">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur" />
+                    <feColorMatrix in="blur" mode="matrix" values="
+                        1 0 0 0 0  
+                        0 1 0 0 0  
+                        0 0 1 0 0  
+                        0 0 0 13 -9" result="goo" />
+                    <feBlend in="SourceGraphic" in2="goo" />
+                </filter>
+                
+                <path id="wave" d="M 0,10 C 30,10 30,15 60,15 90,15 90,10 120,10 150,10 150,15 180,15 210,15 210,10 240,10 v 28 h -240 z" />
+            </defs> 
+        
+            <use id="wave3" class="wave" xlink:href="#wave" x="0" y="-2" ></use> 
+            <use id="wave2" class="wave" xlink:href="#wave" x="0" y="0" ></use>
+          
+            <circle class="drop drop1" cx="20" cy="2" r="1.8"  />
+            <circle class="drop drop2" cx="25" cy="2.5" r="1.5"  />
+            <circle class="drop drop3" cx="16" cy="2.8" r="1.2"  />
+          
+            <use id="wave1" class="wave" xlink:href="#wave" x="0" y="1" />
+        </svg> 
+    </footer>
 </body>
 </html>
